@@ -6973,7 +6973,6 @@ let pci =
 		~lifecycle:[Published, rel_boston, ""]
 		~messages:[]
 		~messages_default_allowed_roles:_R_POOL_OP
-		~implicit_messages_allowed_roles:_R_POOL_OP
 		~persist:PersistEverything
 		~in_oss_since:None
 		~contents:[
@@ -7007,7 +7006,6 @@ let pgpu =
 		~lifecycle:[Published, rel_boston, ""]
 		~messages:[]
 		~messages_default_allowed_roles:_R_POOL_OP
-		~implicit_messages_allowed_roles:_R_POOL_OP
 		~persist:PersistEverything
 		~in_oss_since:None
 		~contents:[
@@ -7032,7 +7030,6 @@ let gpu_group =
 		~lifecycle:[Published, rel_boston, ""]
 		~messages:[]
 		~messages_default_allowed_roles:_R_POOL_OP
-		~implicit_messages_allowed_roles:_R_POOL_OP
 		~persist:PersistEverything
 		~in_oss_since:None
 		~contents:[
@@ -7058,7 +7055,6 @@ let vgpu =
 		~lifecycle:[Published, rel_boston, ""]
 		~messages:[]
 		~messages_default_allowed_roles:_R_POOL_OP
-		~implicit_messages_allowed_roles:_R_POOL_OP
 		~persist:PersistEverything
 		~in_oss_since:None
 		~contents:[
