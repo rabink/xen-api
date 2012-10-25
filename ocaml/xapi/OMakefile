@@ -280,6 +280,8 @@ OCamlDocProgram(xapi, xapi $(XAPI_MODULES))
 
 OCamlLibrary(xapi, xapi $(XAPI_MODULES))
 
+OCamlProgram(cli_doc_tool, cli_doc_lexer cli_doc_tool $(XAPI_MODULES))
+
 OCamlProgram(bootloader, bootloader bootloader_test)
 
 OCamlProgram(binpack, binpack binpack_test xapi_fist)
@@ -300,7 +302,8 @@ install:
 
 .PHONY: clean
 clean:
-	rm -rf $(CLEAN_OBJS) *.aux *.log *.fig xapi
+	rm -rf $(CLEAN_OBJS) *.aux *.log *.fig xapi cli_doc_tool
+	rm -f cli_doc_lexer.ml
 	rm -f config_constants.ml
 	rm -f binpack xapi_unit_test sparse_dd monitor_fake_plugin rrddump quicktestbin
 
